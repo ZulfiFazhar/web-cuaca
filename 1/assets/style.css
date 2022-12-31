@@ -1,0 +1,163 @@
+body {
+    font-family: 'Darker Grotesque', serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    outline: none;
+    background: #7c7c7c;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+    color: #7c7c7c;
+    background: white;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: .4em 1em;
+    border-radius: 20px;
+    background: #7c7c7c7c;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+h1.temp {
+    margin: 0 20px .4em 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.read-more {
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.btn-readmore:hover {
+    text-decoration: underline;
+}
+
+.btn-readmore::after {
+    content: 'Read More';
+}
+
+#check-readmore:checked ~ .btn-readmore::after {
+    content: 'Read Less';
+}
+
+
+/* 5days */
+#weatherContainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons{
+    float: left;
+    width: 190px;
+    margin: 20px;
+    background: #000000d0;
+    border-radius: 20px;
+    color: white;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgClass {
+    width: 100px;
+}
+
+.cuaca{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
